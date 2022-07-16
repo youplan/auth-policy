@@ -4,21 +4,21 @@
       "roles": ["admin"],
       "location": {
         "country": "US",
-        "ip": "8.8.8.8"
+        "ip": "1.1.1.1"
       }
     },
     "bob": {
       "roles": ["employee", "billing"],
       "location": {
         "country": "US",
-        "ip": "8.8.8.8"
+        "ip": "1.1.1.1"
       }
     },
     "eve": {
       "roles": ["customer"],
       "location": {
         "country": "US",
-        "ip": "8.8.8.8"
+        "ip": "1.1.1.1"
       }
     }
   },
