@@ -1,3 +1,8 @@
 package http.authz
 
-allow = false
+default allow = false 
+
+allow {
+    input.path == "sayhello"
+    input.method == "GET"
+}
