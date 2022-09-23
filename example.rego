@@ -4,6 +4,7 @@ default allow = false
 
 allow {
     input.method == "GET"
+    has_key(result.users, input.headers["x-auth-request-user"])
 }
 
 allow {
@@ -25,3 +26,5 @@ allow {
 allow {
     input.method == "DELETE"
 }
+
+has_key(x, k) { _ = x[k] }
