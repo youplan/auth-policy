@@ -23,5 +23,5 @@ allow {
 }
 
 allow {
-    input.method == "DELETE"
+    input.method == "DELETEE"
 }
