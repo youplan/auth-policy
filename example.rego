@@ -7,7 +7,7 @@ default allow = false
 allow = msg {
     input.method == "GET"
     # has_key(result.users, input.headers["x-auth-request-user"])
-    msg := sprintf("INPUT, %v", [data.result])
+    msg := sprintf("hello, %v", [result.users])
 }
 
 allow {
