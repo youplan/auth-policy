@@ -21,3 +21,7 @@ allow {
 allow {
     input.method == "OPTIONS"
 }
+
+allow {
+    input.method == "DELETE"
+}
