@@ -4,7 +4,7 @@ default allow = false
 
 allow {
     input.method == "GET"
-    has_key(result.users, input.headers["x-auth-request-user"])
+    has_key(result.users, input.headers.x-auth-request-user)
 }
 
 allow {
