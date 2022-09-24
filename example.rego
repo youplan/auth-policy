@@ -1,13 +1,13 @@
 package http.authz
 
-import data.result
+import data.result.users
 
 default allow = false
 
 allow = msg {
     input.method == "GET"
     # has_key(result.users, input.headers["x-auth-request-user"])
-    msg := sprintf("hello, %v", [data])
+    msg := sprintf("hello, %v", [users])
 }
 
 allow {
