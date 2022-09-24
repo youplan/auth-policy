@@ -1,6 +1,6 @@
 package http.authz
 
-import data.result.users
+import data.users
 
 default allow = false
 
