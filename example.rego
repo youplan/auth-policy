@@ -4,10 +4,9 @@ import data.users
 
 default allow = false
 
-allow = msg {
+allow {
     input.method == "GET"
-    # has_key(result.users, input.headers["x-auth-request-user"])
-    msg := sprintf("hello, %v", [users])
+    has_key(users, input.headers["x-auth-request-user"])
 }
 
 allow {
