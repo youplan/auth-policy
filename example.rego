@@ -10,7 +10,7 @@ allow {
 
 allow {
     input.method == "GET"
-    has_key(users, input.headers["x-auth-request-user"])
+    # has_key(users, input.headers["x-auth-request-user"])
 }
 
 allow {
