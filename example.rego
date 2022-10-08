@@ -8,10 +8,9 @@ allow {
     input.method == "OPTIONS"
 }
 
-allow := msg {
+allow {
     input.method == "GET"
     has_key(users, input.headers["x-auth-request-user"])
-    msg := sprintf("hello, %v", [input])
 }
 
 allow {
