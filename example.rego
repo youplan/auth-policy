@@ -15,7 +15,7 @@ allow {
 
 allow {
     input.method == "POST"
-    has_key(users, input.headers["x-auth-request-user"])
+#    has_key(users, input.headers["x-auth-request-user"])
 }
 
 allow {
