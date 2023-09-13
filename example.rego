@@ -2,7 +2,7 @@ package http.authz
 
 import data.users
 
-default allow = true
+default allow = false
 
 allow {
     input.method == "OPTIONS"
